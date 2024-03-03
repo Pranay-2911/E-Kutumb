@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:icon="@drawable/ic_baseline_dashboard_24"
+            android:id="@+id/chairman_dash_frag"
+            android:title="Dashboard"/>
+
+        <item android:id="@+id/add_Members_frag"
+            android:title="Add Members"
+            android:icon="@drawable/ic_person_add"/>
+
+        <item android:id="@+id/add__Notice"
+            android:title="Add Notice"
+            android:icon="@drawable/ic_event"/>
+
+        <item android:id="@+id/chairman_Show_Notice"
+            android:title="Show Notice"
+            android:icon="@drawable/ic_notifications"/>
+
+        <item android:id="@+id/show_Members_frag"
+            android:title="Show Members"
+            android:icon="@drawable/ic_people"/>
+
+        <item android:id="@+id/settings_Chairman"
+            android:title="Settings"
+            android:icon="@drawable/ic_settings"
+            />
+
+    </group>
+
+</menu>

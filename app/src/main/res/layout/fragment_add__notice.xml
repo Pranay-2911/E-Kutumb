@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/card_background"
+    tools:context=".Add_Notice">
+
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/addnotes"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="40dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="@dimen/_18ssp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/r_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:errorEnabled="true"
+            android:hint="Add Notice...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:gravity="top|start"
+                android:padding="15dp"
+                android:textColorHint="@color/primary_text"
+                android:textAlignment="textStart"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_text"
+                android:backgroundTint="@color/background"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        app:flow_horizontalAlign="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/cardv">
+
+        <com.google.android.material.button.MaterialButton
+            android:elevation="6dp"
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Submit"
+            android:backgroundTint="@color/item_1"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:cornerRadius="@dimen/_20sdp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shownotice"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="10dp"
+            android:elevation="6dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/item_4"
+            android:text="Show Notice"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="@dimen/_20sdp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/card_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="323dp"
+        android:layout_height="276dp"
+        android:layout_marginLeft="125dp"
+        android:src="@drawable/shape" />
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:src="@drawable/people"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="200dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:fontFamily="sans-serif"
+        android:text="Chairman \nAccount"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/background"
+            android:hint="Username"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            app:startIconTint="@color/primary_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edemail"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:id="@+id/tv2"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            android:background="@color/background"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:passwordToggleTint="@color/primary_text"
+            app:startIconTint="@color/primary_text"
+            android:layout_margin="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/primary"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="30sp" />
+
+        <TextView
+            android:id="@+id/tvregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:text="New User? Register Your Society Here!"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvregister"
+            android:layout_marginTop="50sp"
+            android:text="-----------    Use other Methods    -----------"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="110dp"
+                android:backgroundTint="#F7F7FA"
+                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                android:elevation="6dp"
+                android:src="@drawable/google_icon"
+                app:tint="@null" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="220dp"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                android:elevation="6dp"
+                android:src="@drawable/fb_icon"
+                app:tint="@null" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

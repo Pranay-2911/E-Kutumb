@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chairman_nav_graph"
+    android:label="E_KUTUMB"
+    app:startDestination="@id/chairman_dash_frag">
+
+    <fragment
+        android:id="@+id/chairman_dash_frag"
+        android:name="com.example.digital_society.Chairman_dash_frag"
+        android:label="E-kutumb"
+        tools:layout="@layout/fragment_chairman_dash_frag" />
+    <fragment
+        android:id="@+id/add_Members_frag"
+        android:name="com.example.digital_society.Add_Members_frag"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_add__members_frag" />
+    <fragment
+        android:id="@+id/show_Members_frag"
+        android:name="com.example.digital_society.Show_Members_frag"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_show__members_frag" >
+        <action
+            android:id="@+id/action_show_Members_frag_self"
+            app:destination="@id/show_Members_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/add__Notice"
+        android:name="com.example.digital_society.Add_Notice"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_add__notice" />
+    <fragment
+        android:id="@+id/chairman_Show_Notice"
+        android:name="com.example.digital_society.Chairman_Show_Notice"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_chairman__show__notice" />
+    <fragment
+        android:id="@+id/settings_Chairman"
+        android:name="com.example.digital_society.Settings_Chairman"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_settings__chairman" />
+</navigation>

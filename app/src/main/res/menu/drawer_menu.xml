@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:icon="@drawable/ic_baseline_dashboard_24"
+            android:id="@+id/mem_dashboard"
+            android:title="Dashboard"/>
+
+        <item android:id="@+id/mem_Notice"
+            android:title="E-Notice"
+            android:icon="@drawable/ic_notifications"/>
+
+        <item android:id="@+id/mem_events"
+            android:title="Polling"
+            android:icon="@drawable/ic_event"/>
+
+        <item android:id="@+id/mem_complaint"
+            android:title="Billing"
+            android:icon="@drawable/ic_feedback"/>
+
+        <item android:id="@+id/view_mem"
+            android:title="View Members"
+            android:icon="@drawable/ic_people"/>
+
+        <item android:id="@+id/mem_payments"
+            android:title="Payments"
+            android:icon="@drawable/ic_payment"/>
+
+
+
+        <item android:id="@+id/settings_Member"
+            android:title="Settings"
+            android:icon="@drawable/ic_settings"/>
+
+    </group>
+
+</menu>

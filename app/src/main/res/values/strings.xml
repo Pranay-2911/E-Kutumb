@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">E-KUTUMB</string>
+    <string-array name="role">
+        <item>Select Your Role</item>
+        <item>Chairman</item>
+        <item>Society Member</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

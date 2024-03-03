@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Member_Profile_Fragment">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@mipmap/picon"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name:-"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawableTint="@color/primary_text"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/primary"
+            android:layout_toRightOf="@+id/profile_image"/>
+        <EditText
+            android:id="@+id/edit_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/primary_text"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_below="@+id/tv1"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name:-"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawableTint="@color/primary_text"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textColor="@color/primary"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_below="@+id/edit_firstname"/>
+        <EditText
+            android:id="@+id/edit_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/primary_text"
+            android:layout_below="@+id/tv2"
+            android:layout_toRightOf="@+id/profile_image"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apartment No:-"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:drawableLeft="@drawable/ic_baseline_apartment_24"
+            android:drawableTint="@color/primary_text"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. of House Members:-"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:drawableLeft="@drawable/ic_baseline_people_alt_24"
+            android:drawableTint="@color/primary_text"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/primary_text" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/edit_profile"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/primary"
+        app:cornerRadius="@dimen/_50sdp"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="@dimen/_100sdp"/>
+
+
+</RelativeLayout>

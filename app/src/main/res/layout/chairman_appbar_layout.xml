@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Welcome, Chairman"
+            app:titleTextColor="#3397CD"
+            android:elevation="6dp"
+            android:background="@drawable/toolbar"
+            android:id="@+id/chairman_toolbar"
+            app:menu="@menu/my_menu" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/main_contentview_chairman"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

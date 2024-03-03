@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@drawable/ic_baseline_dashboard_24"
+        android:id="@+id/chairman_dash_frag"
+        android:title="Dashboard"/>
+
+    <item android:id="@+id/show_Members_frag"
+        android:title="Show Members"
+        android:icon="@drawable/ic_people"/>
+
+    <item android:id="@+id/add_Members_frag"
+        android:title="Add Members"
+        android:icon="@drawable/ic_person_add"/>
+</menu>

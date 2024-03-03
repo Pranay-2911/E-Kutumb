@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_graph"
+    app:startDestination="@id/mem_dashboard">
+
+    <fragment
+        android:id="@+id/mem_dashboard"
+        android:name="com.example.digital_society.mem_dashboard"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_mem_dashboard" />
+    <fragment
+        android:id="@+id/mem_Notice"
+        android:name="com.example.digital_society.mem_Notice"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_mem_notice" />
+    <fragment
+        android:id="@+id/mem_events"
+        android:name="com.example.digital_society.mem_events"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_mem_events" />
+    <fragment
+        android:id="@+id/mem_complaint"
+        android:name="com.example.digital_society.mem_complaint"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_mem_complaint" />
+    <fragment
+        android:id="@+id/view_mem"
+        android:name="com.example.digital_society.view_mem"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_view_mem" />
+    <fragment
+        android:id="@+id/mem_payments"
+        android:name="com.example.digital_society.mem_payments"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_mem_payments" />
+    <fragment
+        android:id="@+id/mem_vote"
+        android:name="com.example.digital_society.mem_vote"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_mem_vote" />
+    <fragment
+        android:id="@+id/member_Profile_Fragment"
+        android:name="com.example.digital_society.Member_Profile_Fragment"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_member_profile" />
+    <fragment
+        android:id="@+id/settings_Member"
+        android:name="com.example.digital_society.Settings_Member"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_settings__member" />
+    <fragment
+        android:id="@+id/edit_Member_Profile"
+        android:name="com.example.digital_society.Edit_Member_Profile"
+        android:label="M-Society"
+        tools:layout="@layout/fragment_edit__member__profile" />
+</navigation>

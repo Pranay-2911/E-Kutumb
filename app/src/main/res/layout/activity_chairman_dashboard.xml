@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/draw_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Chairman_dashboard"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/chairman_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:background="@color/card_background"
+        android:elevation="6dp"
+        android:layout_height="match_parent"
+        app:itemIconTint="@color/primary_text"
+        android:id="@+id/chairman_nav_view"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:menu="@menu/chairman_drawer_menu"
+        app:headerLayout="@layout/nav_header_view"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

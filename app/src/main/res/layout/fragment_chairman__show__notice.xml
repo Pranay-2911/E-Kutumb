@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/card_background"
+    tools:context=".Chairman_Show_Notice">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd1"
+        android:background="@color/primary"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints" >
+
+        <TextView
+            android:paddingRight="@dimen/_30sdp"
+            android:drawablePadding="-50dp"
+            android:background="@color/primary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Notice"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text"
+            android:fontFamily="serif"
+            android:textSize="22sp"
+            android:drawableEnd="@drawable/ic_notifications"
+            tools:ignore="RtlCompat" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/delete_notice"
+        android:layout_below="@+id/cd1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete_notice"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_centerHorizontal="true"
+        android:text="Clear All"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
+        app:cornerRadius="@dimen/_50sdp"
+        android:backgroundTint="@color/primary"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
