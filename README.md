@@ -12,7 +12,8 @@ Result :-
 
 
 
-![image](https://github.com/Pranay-2911/E-Kutumb/assets/147989829/3230956c-19ff-4b24-9873-d901495c8a1c)
+![image](https://github.com/Pranay-2911/E-Kutumb/assets/147989829/7f3fa2bd-dd55-4d10-9fc6-d3946b0c73da)
+
 
 
 
